@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+---
+spring:
+  profiles:
+    active: native
+---
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: C:/Users/Roma/IdeaProjects/my-example/ms-config-properties/{application}/{profile
+  config:
+    activate:
+      on-profile:
